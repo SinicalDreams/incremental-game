@@ -1,0 +1,39 @@
+.sidebar {
+    height:100%;
+    width:200px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3C3744;
+    overflow-x: hidden;
+}
+
+.main {
+    margin-left: 200px;
+    height: 100%;
+    padding: 0px 10px;
+    background-color: #1A1E1E;
+  }
+
+.sidebar-container {
+    border: 1px solid black;
+    margin:10 5;
+    padding: 5;
+    position: relative;
+}
+ .container-row {
+    border: 1px solid black;
+    margin:10px 10px 10px;
+    padding: 10px 0px;
+    color:white;
+    text-align:center;
+ }
+
+.title {
+    text-align: center;
+    font-size: 1em;
+    font-family: monospace, monospace;
+    font:roboto mono;
+    color: white;
+}
