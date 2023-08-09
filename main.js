@@ -7,17 +7,14 @@ var enterprises = {
     'Crafting' : {
         'cost' : 10
     },
-    'Transmutation' : {
+    'Alchemy' : {
         'cost' : 100
     },
     'Conjuration' : {
         'cost' : 1000
     },
-    'Demonic Pacts' : {
+    'Transmutation' : {
         'cost' : 10000
-    },
-    'Wish' : {
-        'cost' : 100000
     }
 }
 
