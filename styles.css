@@ -1,3 +1,9 @@
+:root {
+    --primaryColor: #3C3744;
+    font-family: monospace, monospace;
+    font:roboto mono;
+}
+
 .sidebar {
     height:100%;
     width:200px;
@@ -5,24 +11,16 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #3C3744;
+    background-color: var(--primaryColor);
     overflow-x: hidden;
 }
-
-.main {
-    margin-left: 200px;
-    height: 100%;
-    padding: 0px 10px;
-    background-color: #1A1E1E;
-  }
-
 .sidebar-container {
     border: 1px solid black;
     margin:10 5;
     padding: 5;
     position: relative;
 }
- .container-row {
+.container-row {
     border: 1px solid black;
     margin:10px 10px 10px;
     padding: 10px 0px;
@@ -30,10 +28,175 @@
     text-align:center;
  }
 
+.page {
+    margin-left: 200px;
+    height: 100%;
+    background-color: #1A1E1E;
+  }
+
+.content {
+    margin:20px;
+}
+ 
+.header {
+    background: var(--primaryColor);
+    height: 2rem;
+}
+
 .title {
     text-align: center;
     font-size: 1em;
-    font-family: monospace, monospace;
-    font:roboto mono;
     color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.materials-container {
+    border: 1px solid white;
+    height: 300px;
+    box-sizing: border-box;
+    overflow-y:auto;
+}
+
+.materials-header {
+    color:white;
+    font-size: 2em;
+    padding: 5px 25px;
+    border:1px solid white;
+}
+
+
+.items {
+    display:flex;
+    flex-wrap: wrap;
+    padding:5px 10px;
+}
+
+.item {
+    position: relative;
+    height: 64px;
+    width: 64px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+
+.card-container {
+    border: 1px solid white;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 56px;
+    background-color: black;  
+}
+ .card-background {
+    height: 600px;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    background-color: #bbb;
+    z-index: 0;
+}
+
+/*
+    -------------------------
+    -------------------------
+            BORDERS
+    -------------------------
+    -------------------------
+*/
+
+.frame-header,
+.frame-art,
+.frame-type-line {
+    border: 1px solid white;
+
+    margin-bottom: 7px;
+}
+
+.frame-text-box {
+    border: 1px solid white;
+}
+
+/*
+    ----------------------
+    ----------------------
+            OVERFLOW
+    ----------------------
+    ----------------------
+*/
+.frame-header,
+.frame-type-line,
+.frame-text-box {
+    overflow: hidden;
+}
+
+
+/*
+  ----------------------------------------
+  ----------------------------------------
+            CARD FRAME
+  ----------------------------------------
+  ----------------------------------------
+*/
+.card-frame {
+    z-index: 1;
+    position: relative;
+    height: 108%;
+    max-width: 97%;
+    left: 1%;
+    top: 0.5%;
+    left: 1.2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.frame-header,
+.frame-type-line {    
+    padding: 15px 0;
+    justify-content: space-between;
+}
+/*
+  Tue 27/3
+*/
+.name,
+.type {
+    font-size: 1.5em;
+    margin-left: 10px;
+    align-self: baseline;
+    color:white
+    
+}
+
+.frame-art {
+    height: 50%;
+    margin: 0 10px; 
+}
+
+.frame-type-line {
+    margin-top: 0;
+} 
+
+.frame-text-box {
+    margin: 0 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    padding: 50px 6px;
+    font-size: 1.2em;
+}
+
+.flavour-text {
+    font-style: italic;
+    padding: 10px 0;
+    color: white;
+}
+
+.inner-margins {
+    margin: 0 10px;
+    color:white;
 }

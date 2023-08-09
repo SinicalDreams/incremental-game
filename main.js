@@ -1,10 +1,10 @@
 var gameData = {
     gold: 0,
-    currentTab: "Potionomics"
+    currentTab: "Crafting"
 }
 
 var enterprises = {
-    'Potionomics' : {
+    'Crafting' : {
         'cost' : 10
     },
     'Transmutation' : {
@@ -54,8 +54,12 @@ function drawContainer(items, parent) {
 
 function switchMenu(menu) {
     console.log(menu)
-    document.getElementById("screen-" + gameData['currentTab']).style.display= "none"
-    document.getElementById("screen-" + menu).style.display= "inline-block"
+    oldScreen = document.getElementById("screen-" + gameData['currentTab'])
+    newScreen = document.getElementById("screen-" + menu)
+    
+    oldScreen.classList.add("hidden")
+    newScreen.classList.remove("hidden")
+    
     gameData['currentTab'] = menu
 }
 
